@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Вход</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cssResp.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body onload="parseGetParamsLogin()">
+<div class="wrapper">
+	<div class="content">
+    	<a href="#">
+            <header>
+    		ПТИЦЫ БЕЛАРУСИ
+            </header>
+        </a>
+    	<main>
+            
+            <section class="login">
+            	<p>Вход</p>
+                <form name="login-form" action="login" method="post">
+                    <div class="login-input">
+                        <p>Логин</p>
+            		<input type="text" size="40" name="login"/>
+                    </div>
+                    <div class="login-input">
+                        <p>Пароль</p>
+            		<input type="password" size="40" name="password" />
+                    </div>
+                    <div id="errors"></div>
+                    
+                </form>
+                <button onclick="CheckLogin()">Войти</button>
+                <a href="html/registration.html"><p class="reg">Зарегистрироваться</p></a>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+    	&copy; Алина Тоестева, 2016
+    </footer>	
+</div>
+</body>
+</html>
+
