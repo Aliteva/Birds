@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Регистрация</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/cssResp.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body onload="parseGetParamsRegisrt()">
+<div class="wrapper">
+	<div class="content">
+    	<a href="#"><header>
+    		ПТИЦЫ БЕЛАРУСИ
+    	</header></a>
+    	<main>
+    		<section class="login">
+            	<p>Регистрация</p>
+                <form name="registr-form" action="../Registration" method="post">
+                    <div class="login-input">
+                    	<p>Логин</p>
+            		<input type="text" size="40" name="login"/>
+                    </div>
+                    <div class="login-input">
+                    	<p>Пароль</p>
+            		<input type="password" size="40" name="pass" />
+                    </div>
+                    <div class="login-input">
+                    	<p>Повторите пароль</p>
+            		<input type="password" size="40" name="pass2"/>
+                    </div>
+                    <div class="login-input-radio">
+                    	<div>
+                            <input type="radio" name="who" value="admin" id="admin" />
+                            <label for="admin">Я орнитолог</label>
+                        </div>
+   			<div>
+                            <input type="radio" name="who" value="user" id="user" checked="checked" />
+                            <label for="user">Я наблюдатель</label>
+                        </div>
+                    </div>
+                    <div id="errors"></div>
+                </form>
+                <button class="r" onClick="CheckRegistr()">Регистрация</button>
+                <a href="../index.html"><p class="reg">Войти</p></a>
+            </section>
+            
+        </main>
+    </div>
+    <footer>
+    	&copy; Алина Тоестева, 2016
+    </footer>
+</div>
+</body>
+</html>
